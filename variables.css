@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+  --direct-speech-color: violet;
+  --direct-speech-font-style: italic;
+  --part-text-shadow: 5pt 5px 3pt red;
+  --part-text-align: center;
+  --p-text-indent: 1.5em;
+  --global-font-family: "Arial";
+  --contents-list-style: square;
+  --link-color: red;
+  --visited-color: green;
+  --p-border-left: 4px solid yellow;
+  --img-width: 100%;
+  --imgh-margin: 20px 0;
+  --first-letter-background-color: orange;
+  --first-letter-font-style: italic;
+  --first-letter-font-size: 1.5em;
+  --selection-color: red;
+  --selection-background-color: blue;
+  --story-margin-left: 140px;
+  --contents-block-width: 8.7rem;
+  --contents-block-top: 40%;
+  --contents-block-position: fixed;
+  --contents-block-border-bottom: 2px dotted blue;
+  --part-border-bottom: 2px dotted blue;
+  --story-border-left: 2px dotted blue;
+  --C-prog-h: 5px;
+}

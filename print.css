@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.group, img {
+  display: none;
+}
+
+#contents-block, #description, #current-progress {
+  display: none;
+}
+
+#header, #part1, #part2, #part3 {
+  text-align: var(--part-text-align);
+}
+
+hr {
+  display: none;
+}
+
+p {
+  text-indent: var(--p-text-indent);
+  text-align: justify;
+}

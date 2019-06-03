@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import "variables.css";
+@import "print.css"print;
+
+@media screen {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #current-progress {
+    height: var(--C-prog-h);
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 5;
+  }
+
+  .direct-speech {
+    color: var(--direct-speech-color);
+    font-style: var(--direct-speech-font-style);
+  }
+
+  #header {
+    text-transform: uppercase;
+    text-decoration: underline double red;
+    text-align: center;
+    border-bottom: 2px dotted blue;
+    margin-left: -10px;
+  }
+
+  p {
+    text-indent: var(--p-text-indent);
+    text-align: justify;
+  }
+
+  #contents {
+    list-style: var(--contents-list-style);
+    text-transform: uppercase;
+    padding-left: 1.2em;
+    font-size: 90%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link {
+    color: var(--link-color);
+  }
+
+  a:visited {
+    color: var(--visited-color);
+  }
+
+  #story p:hover {
+    border-left: var(--p-border-left);
+  }
+
+  .group {
+    width: 40%;
+    float: left;
+  }
+
+  .group:hover {
+    outline: 5px outset lightcoral;
+    outline-offset: 10px;
+  }
+
+  img {
+    width: var(--img-width);
+  }
+
+  .group-image {
+    border: 6px double black;
+  }
+
+  .group-text {
+    font-style: var(--direct-speech-font-style);
+    text-align: var(--part-text-align);
+  }
+
+  h1, h2, img {
+    margin: var(--imgh-margin);
+  }
+
+  h1:hover::before, h2:hover::before {
+    content: "#";
+    color: pink;
+  }
+
+  h2 + p::first-letter {
+    font-style: var(--first-letter-font-style);
+    font-size: var(--first-letter-font-size);
+  }
+
+  ::selection {
+    color: var(--selection-color);
+    background-color: var(--selection-background-color);
+  }
+
+  #contents-block {
+    width: var(--contents-block-width);
+    position: var(--contents-block-position);
+    top: var(--contents-block-top);
+    border-bottom: var(--contents-block-border-bottom);
+    z-index: 1;
+  }
+
+  #part1, #part2, #part3 {
+    position: sticky;
+    top: var(--C-prog-h);
+    padding-left: 10px;
+    border-bottom: var(--part-border-bottom);
+    background-color: rgba(255, 255, 255, 80%);
+    margin-left: -10px;
+    text-shadow: var(--part-text-shadow);
+    text-align: var(--part-text-align);
+  }
+
+  p:not([class="direct-speech"])::first-line {
+    font-style: italic;
+  }
+
+  #story {
+    padding-left: 10px;
+    margin-left: var(--story-margin-left);
+    border-left: var(--story-border-left);
+    margin-top: var(--C-prog-h);
+  }
+
+  #description {
+    overflow-y: scroll;
+  }
+}
+
+* {
+  font-family: var(--global-font-family);
+}
+
+hr {
+  clear: both;
+}
