@@ -63,6 +63,10 @@
     float: left;
   }
 
+  #group2 {
+    float: right;
+  }
+
   .group:hover {
     outline: 5px outset lightcoral;
     outline-offset: 10px;
